@@ -50,7 +50,7 @@ export default function About() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">Ubicación Central</h3>
             <p className="text-gray-600">
-              Cerca de restaurantes, tiendas y actividades acuáticas
+              Cerca de los mejores restaurantes de la playa Las Ballenas 
             </p>
           </div>
         </div>

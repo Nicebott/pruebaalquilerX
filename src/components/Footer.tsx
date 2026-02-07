@@ -18,9 +18,11 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Contacto</h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <MapPin className="w-5 h-5 flex-shrink-0" />
-                <span className="text-sm">Av. Los Corales 9, Las Terrenas</span>
+              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
+                <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full p-2">
+                  <MapPin className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-sm font-semibold group-hover:text-blue-400">Las Terrenas, República Dominicana</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 flex-shrink-0" />

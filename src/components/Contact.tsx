@@ -82,13 +82,12 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Dirección</h3>
-                  <p className="text-gray-600">
-                    Av. Los Corales 9<br />
+                  <h3 className="font-semibold text-gray-900 mb-2">Ubicación</h3>
+                  <p className="text-lg font-bold text-blue-600">
                     Las Terrenas, República Dominicana
                   </p>
                 </div>

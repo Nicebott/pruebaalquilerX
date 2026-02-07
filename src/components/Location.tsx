@@ -1,12 +1,12 @@
-import { Wifi, Wind, Utensils, Car, ShoppingBag, Droplets } from 'lucide-react';
+import { Wifi, Wind, Utensils, Car, MapPin, Droplets } from 'lucide-react';
 
 export default function Location() {
   const amenities = [
-    { icon: Wifi, title: 'WiFi Gratis', description: 'Internet de alta velocidad' },
+    { icon: MapPin, title: 'Ubicación Central', description: 'Cerca de restaurantes' },
     { icon: Wind, title: 'Aire Acondicionado', description: 'Clima perfecto todo el día' },
-    { icon: Utensils, title: 'Mejores Restaurantes', description: 'Gastronomía de calidad cercana' },
+    { icon: Utensils, title: 'Cerca de Restaurantes', description: 'Gastronomía de calidad cercana' },
     { icon: Car, title: 'Estacionamiento', description: 'Espacio seguro para tu vehículo' },
-    { icon: ShoppingBag, title: 'Cerca de Tiendas', description: 'Supermercados y restaurantes' },
+    { icon: Wifi, title: 'WiFi Gratis', description: 'Internet de alta velocidad' },
     { icon: Droplets, title: 'Cerca de la Playa', description: 'A minutos de aguas cristalinas' },
   ];
 

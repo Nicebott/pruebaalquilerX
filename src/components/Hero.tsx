@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, MapPin } from 'lucide-react';
 
 export default function Hero() {
   const scrollToApartments = () => {
@@ -22,9 +22,12 @@ export default function Hero() {
           <p className="text-xl sm:text-2xl lg:text-3xl font-light max-w-3xl mx-auto">
             Descubre tu refugio perfecto en las hermosas playas del Caribe
           </p>
-          <div className="pt-4">
-            <p className="text-lg sm:text-xl text-gray-200">
-              Av. Los Corales 9, Las Terrenas
+          <div className="pt-4 flex items-center justify-center gap-3">
+            <div className="bg-white/20 backdrop-blur-sm rounded-full p-3">
+              <MapPin className="w-6 h-6 text-white" />
+            </div>
+            <p className="text-xl sm:text-2xl font-semibold text-white">
+              Las Terrenas, República Dominicana
             </p>
           </div>
           <button
