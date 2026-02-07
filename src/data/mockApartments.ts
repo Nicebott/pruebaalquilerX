@@ -3,18 +3,18 @@ import { Apartment } from '../types';
 export const mockApartments: Apartment[] = [
   {
     id: '1',
-    title: 'Apartamento Vista al Mar',
-    description: 'Hermoso apartamento con vista panorámica al océano. Espacio luminoso y moderno con todas las comodidades para una estancia perfecta. Disfruta de impresionantes amaneceres desde tu balcón privado.',
+    title: 'Apartamento A',
+    description: 'Cómodo apartamento con 2 habitaciones. Ideal para familias pequeñas o grupos de amigos que buscan pasar unos días de descanso en Las Terrenas.',
     bedrooms: 2,
-    bathrooms: 2,
+    bathrooms: 1,
     max_guests: 4,
     price_per_night: 120,
     amenities: [
       'WiFi de alta velocidad',
       'Aire acondicionado',
       'Cocina completa',
-      'Balcón privado',
-      'TV por cable',
+      'Acceso a la playa',
+      'Estacionamiento',
       'Ropa de cama'
     ],
     images: [
@@ -28,33 +28,8 @@ export const mockApartments: Apartment[] = [
   },
   {
     id: '2',
-    title: 'Suite Tropical Deluxe',
-    description: 'Suite espaciosa rodeada de jardines tropicales. Perfecta para familias o grupos que buscan comodidad y privacidad. A pocos pasos de la playa principal de Las Terrenas.',
-    bedrooms: 3,
-    bathrooms: 2,
-    max_guests: 6,
-    price_per_night: 180,
-    amenities: [
-      'WiFi gratis',
-      'Aire acondicionado',
-      'Cocina equipada',
-      'Piscina compartida',
-      'Estacionamiento',
-      'Lavadora'
-    ],
-    images: [
-      'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-      'https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg',
-      'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg'
-    ],
-    available: true,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString()
-  },
-  {
-    id: '3',
-    title: 'Estudio Playa Coralina',
-    description: 'Acogedor estudio ideal para parejas. Decoración moderna con toques caribeños. Ubicación privilegiada a solo 2 minutos caminando de la playa. Todo lo que necesitas para unas vacaciones románticas.',
+    title: 'Apartamento B',
+    description: 'Acogedor apartamento de una habitación, perfecto para parejas o viajeros individuales. Ubicación privilegiada cerca de playas y restaurantes de Las Terrenas.',
     bedrooms: 1,
     bathrooms: 1,
     max_guests: 2,
@@ -62,8 +37,8 @@ export const mockApartments: Apartment[] = [
     amenities: [
       'WiFi incluido',
       'Aire acondicionado',
-      'Kitchenette',
-      'Terraza privada',
+      'Cocina equipada',
+      'Balcón privado',
       'Ducha moderna',
       'Ventiladores'
     ],
@@ -77,21 +52,46 @@ export const mockApartments: Apartment[] = [
     updated_at: new Date().toISOString()
   },
   {
+    id: '3',
+    title: 'Apartamento D',
+    description: 'Apartamento cómodo con 1 habitación. Una excelente opción para viajeros que desean disfrutar de la belleza de Las Terrenas sin gastar demasiado.',
+    bedrooms: 1,
+    bathrooms: 1,
+    max_guests: 2,
+    price_per_night: 80,
+    amenities: [
+      'WiFi rápido',
+      'Aire acondicionado',
+      'Cocina funcional',
+      'Terraza',
+      'Acceso a playa',
+      'Ventiladores'
+    ],
+    images: [
+      'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+      'https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg',
+      'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg'
+    ],
+    available: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  },
+  {
     id: '4',
-    title: 'Penthouse Las Corales',
-    description: 'Lujoso penthouse con vistas de 360 grados. Terraza amplia con jacuzzi privado y zona de barbacoa. El apartamento más exclusivo de nuestra colección, perfecto para una experiencia VIP en el paraíso.',
-    bedrooms: 3,
-    bathrooms: 3,
-    max_guests: 8,
-    price_per_night: 250,
+    title: 'Casa Pluda',
+    description: 'Espaciosa casa con 6 habitaciones y 6 baños. Perfecta para grandes grupos, familias o retiros corporativos. Comodidades completas y espacios amplios para disfrutar al máximo.',
+    bedrooms: 6,
+    bathrooms: 6,
+    max_guests: 12,
+    price_per_night: 380,
     amenities: [
       'WiFi premium',
       'Aire acondicionado central',
       'Cocina gourmet',
-      'Jacuzzi privado',
-      'BBQ en terraza',
-      'Smart TV',
-      'Sistema de sonido',
+      'Sala de estar amplia',
+      'Área de jardín',
+      'Estacionamiento múltiple',
+      'Piscina',
       'Servicio de limpieza'
     ],
     images: [

@@ -100,7 +100,7 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">info@lasterrenas-apartments.com</p>
+                  <p className="text-gray-600">ferminmaribel@casamaribel.com.do</p>
                 </div>
               </div>
 
@@ -110,7 +110,8 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Teléfono</h3>
-                  <p className="text-gray-600">+1 (809) 555-0123</p>
+                  <p className="text-gray-600">+1 (829) 697-4277</p>
+                  <p className="text-gray-600">+1 (809) 967-2175</p>
                 </div>
               </div>
             </div>

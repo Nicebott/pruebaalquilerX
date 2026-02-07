@@ -4,7 +4,7 @@ export default function Location() {
   const amenities = [
     { icon: Wifi, title: 'WiFi Gratis', description: 'Internet de alta velocidad' },
     { icon: Wind, title: 'Aire Acondicionado', description: 'Clima perfecto todo el día' },
-    { icon: Utensils, title: 'Cocina Equipada', description: 'Todos los utensilios necesarios' },
+    { icon: Utensils, title: 'Mejores Restaurantes', description: 'Gastronomía de calidad cercana' },
     { icon: Car, title: 'Estacionamiento', description: 'Espacio seguro para tu vehículo' },
     { icon: ShoppingBag, title: 'Cerca de Tiendas', description: 'Supermercados y restaurantes' },
     { icon: Droplets, title: 'Cerca de la Playa', description: 'A minutos de aguas cristalinas' },
@@ -63,11 +63,7 @@ export default function Location() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-blue-50">Restaurantes y cafés cercanos</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-blue-50">Excursiones y actividades acuáticas</span>
+                <span className="text-blue-50">Mejores restaurantes de la zona</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
