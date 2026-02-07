@@ -1,50 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Home, Users, Bath, Bed, Check, Images } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 import { Apartment } from '../types';
 import PhotoModal from './PhotoModal';
+import { mockApartments } from '../data/mockApartments';
 
 interface ApartmentsProps {
   onBookClick: (apartmentId: string) => void;
 }
 
 export default function Apartments({ onBookClick }: ApartmentsProps) {
-  const [apartments, setApartments] = useState<Apartment[]>([]);
-  const [loading, setLoading] = useState(true);
+  const apartments = mockApartments;
   const [selectedApartment, setSelectedApartment] = useState<Apartment | null>(null);
-
-  useEffect(() => {
-    fetchApartments();
-  }, []);
-
-  const fetchApartments = async () => {
-    try {
-      const { data, error } = await supabase
-        .from('apartments')
-        .select('*')
-        .eq('available', true)
-        .order('created_at', { ascending: false });
-
-      if (error) throw error;
-      setApartments(data || []);
-    } catch (error) {
-      console.error('Error fetching apartments:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  if (loading) {
-    return (
-      <section id="apartments" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section id="apartments" className="py-20 bg-white">

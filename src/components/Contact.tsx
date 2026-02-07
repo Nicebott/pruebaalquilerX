@@ -1,6 +1,5 @@
 import { useState, FormEvent, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, X, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 import { Inquiry } from '../types';
 
 interface ContactProps {
@@ -22,7 +21,6 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
 
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (selectedApartmentId) {
@@ -33,37 +31,29 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    setError(null);
 
-    try {
-      const { error: submitError } = await supabase
-        .from('inquiries')
-        .insert([formData]);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      if (submitError) throw submitError;
+    console.log('Consulta enviada:', formData);
 
-      setSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        check_in: '',
-        check_out: '',
-        guests: 2,
-        message: '',
-        apartment_id: selectedApartmentId || undefined,
-      });
+    setSuccess(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      check_in: '',
+      check_out: '',
+      guests: 2,
+      message: '',
+      apartment_id: selectedApartmentId || undefined,
+    });
 
-      setTimeout(() => {
-        setSuccess(false);
-        if (onClose) onClose();
-      }, 3000);
-    } catch (err) {
-      setError('Error al enviar tu consulta. Por favor intenta de nuevo.');
-      console.error('Error submitting inquiry:', err);
-    } finally {
-      setSubmitting(false);
-    }
+    setTimeout(() => {
+      setSuccess(false);
+      if (onClose) onClose();
+    }, 3000);
+
+    setSubmitting(false);
   };
 
   const handleChange = (
@@ -256,12 +246,6 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
                     placeholder="¿Alguna pregunta o solicitud especial?"
                   />
                 </div>
-
-                {error && (
-                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm">
-                    {error}
-                  </div>
-                )}
 
                 <button
                   type="submit"
