@@ -1,6 +1,7 @@
 import { useState, FormEvent, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send, X, CheckCircle } from 'lucide-react';
 import { Inquiry } from '../types';
+import { mockApartments } from '../data/mockApartments';
 
 interface ContactProps {
   selectedApartmentId?: string;
@@ -32,9 +33,37 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
     e.preventDefault();
     setSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const phoneNumber = '18296974277';
+    let message = `Hola! Me gustaría hacer una consulta para alquilar un apartamento.
 
-    console.log('Consulta enviada:', formData);
+👤 *Datos de Contacto:*
+- Nombre: ${formData.name}
+- Email: ${formData.email}`;
+
+    if (formData.phone) {
+      message += `\n- Teléfono: ${formData.phone}`;
+    }
+
+    message += `\n\n📅 *Fechas:*
+- Check-in: ${formData.check_in}
+- Check-out: ${formData.check_out}
+- Huéspedes: ${formData.guests}`;
+
+    if (formData.apartment_id) {
+      const apartment = mockApartments.find(apt => apt.id === formData.apartment_id);
+      if (apartment) {
+        message += `\n\n🏠 *Apartamento de interés:* ${apartment.title}`;
+      }
+    }
+
+    if (formData.message) {
+      message += `\n\n💬 *Mensaje adicional:*\n${formData.message}`;
+    }
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, '_blank');
 
     setSuccess(true);
     setFormData({
@@ -50,10 +79,9 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
 
     setTimeout(() => {
       setSuccess(false);
+      setSubmitting(false);
       if (onClose) onClose();
-    }, 3000);
-
-    setSubmitting(false);
+    }, 2000);
   };
 
   const handleChange = (
@@ -69,54 +97,54 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
   const today = new Date().toISOString().split('T')[0];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Contáctanos
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
               Estamos aquí para ayudarte a planificar tus vacaciones perfectas en Las Terrenas
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
-                  <MapPin className="w-6 h-6 text-white" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Ubicación</h3>
-                  <p className="text-lg font-bold text-blue-600">
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Ubicación</h3>
+                  <p className="text-base sm:text-lg font-bold text-blue-600 break-words">
                     Las Terrenas, República Dominicana
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-blue-600" />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">ferminmaribel@casamaribel.com.do</p>
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Email</h3>
+                  <p className="text-gray-600 text-sm sm:text-base break-all">ferminmaribel@casamaribel.com.do</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-blue-600" />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Teléfono</h3>
-                  <p className="text-gray-600">+1 (829) 697-4277</p>
-                  <p className="text-gray-600">+1 (809) 967-2175</p>
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Teléfono</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">+1 (829) 697-4277</p>
+                  <p className="text-gray-600 text-sm sm:text-base">+1 (809) 967-2175</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
             {onClose && (
               <button
                 onClick={onClose}
@@ -127,17 +155,17 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
             )}
 
             {success ? (
-              <div className="text-center py-12">
-                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <div className="text-center py-8 sm:py-12">
+                <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-green-500 mx-auto mb-4" />
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                   ¡Consulta Enviada!
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Te contactaremos pronto para confirmar tu reserva.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Nombre Completo

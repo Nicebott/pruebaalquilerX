@@ -5,65 +5,69 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">Las Terrenas Apartments</h3>
-            <p className="text-gray-400 leading-relaxed">
+            <h3 className="text-white text-lg sm:text-xl font-bold mb-3 sm:mb-4">Las Terrenas Apartments</h3>
+            <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
               Tu hogar lejos de casa en el paraíso caribeño. Descubre la belleza de Las Terrenas
               con el confort que mereces.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contacto</h3>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
-                <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full p-2">
-                  <MapPin className="w-4 h-4 text-white" />
+            <h3 className="text-white text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contacto</h3>
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-400 hover:text-white transition-colors group">
+                <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full p-1.5 sm:p-2 flex-shrink-0 mt-0.5 sm:mt-0">
+                  <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                 </div>
-                <span className="text-sm font-semibold group-hover:text-blue-400">Las Terrenas, República Dominicana</span>
+                <span className="text-xs sm:text-sm font-semibold group-hover:text-blue-400 break-words">Las Terrenas, República Dominicana</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <Mail className="w-5 h-5 flex-shrink-0" />
-                <span className="text-sm">info@lasterrenas-apartments.com</span>
+              <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-400 hover:text-white transition-colors">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5 sm:mt-0" />
+                <span className="text-xs sm:text-sm break-all">ferminmaribel@casamaribel.com.do</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <Phone className="w-5 h-5 flex-shrink-0" />
-                <span className="text-sm">+1 (809) 555-0123</span>
+              <div className="flex items-center gap-2 sm:gap-3 text-gray-400 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span className="text-xs sm:text-sm">+1 (829) 697-4277</span>
+              </div>
+              <div className="flex items-center gap-2 sm:gap-3 text-gray-400 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span className="text-xs sm:text-sm">+1 (809) 967-2175</span>
               </div>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Síguenos</h3>
-            <div className="flex gap-4">
+          <div className="sm:col-span-2 md:col-span-1">
+            <h3 className="text-white text-base sm:text-lg font-semibold mb-3 sm:mb-4">Síguenos</h3>
+            <div className="flex gap-3 sm:gap-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
                 aria-label="Facebook"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors duration-300"
                 aria-label="Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors duration-300"
                 aria-label="Twitter"
               >
-                <Twitter className="w-5 h-5" />
+                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
           <p>&copy; {currentYear} Las Terrenas Apartments. Todos los derechos reservados.</p>
         </div>
       </div>
