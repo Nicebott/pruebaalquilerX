@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="relative h-screen w-full overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/el-portillo-playa-las-terrenas.jpg)' }}
+        style={{ backgroundImage: 'url(/WhatsApp_Image_2026-02-09_at_6.08.04_PM.jpeg)' }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
       </div>
@@ -22,7 +22,7 @@ export default function Hero() {
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light max-w-3xl mx-auto px-4">
             Descubre tu refugio perfecto en las hermosas playas del Caribe
           </p>
-          <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 px-4">
+          <div className="pt-2 sm:pt-4 flex flex-row items-center justify-center gap-2 sm:gap-3 px-4">
             <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3">
               <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
