@@ -22,11 +22,11 @@ export default function Hero() {
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light max-w-3xl mx-auto px-4">
             Descubre tu refugio perfecto en las hermosas playas del Caribe
           </p>
-          <div className="pt-2 sm:pt-4 flex flex-row items-center justify-center gap-2 sm:gap-3 px-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3">
-              <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+          <div className="pt-2 sm:pt-4 flex flex-row items-center justify-center gap-2 sm:gap-3 px-4 flex-nowrap">
+            <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3 flex-shrink-0">
+              <MapPin className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
             </div>
-            <p className="text-base sm:text-xl md:text-2xl font-semibold text-white text-center">
+            <p className="text-xs sm:text-xl md:text-2xl font-semibold text-white text-center whitespace-nowrap">
               Las Terrenas, República Dominicana
             </p>
           </div>
