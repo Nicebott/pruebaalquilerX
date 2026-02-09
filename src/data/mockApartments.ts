@@ -43,9 +43,10 @@ export const mockApartments: Apartment[] = [
       'Ventiladores'
     ],
     images: [
-      'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg',
-      'https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg',
-      'https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg'
+      '/Apartamento B/cozy-bedroom-tropical-style.avif',
+      '/Apartamento B/cozy-studio-apartment-tropical-beach-decor.jpeg',
+      '/Apartamento B/modern-bathroom-compact.avif',
+      '/Apartamento B/studio-apartment-kitchenette.avif'
     ],
     available: true,
     created_at: new Date().toISOString(),
@@ -95,10 +96,14 @@ export const mockApartments: Apartment[] = [
       'Servicio de limpieza'
     ],
     images: [
-      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-      'https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg',
-      'https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg',
-      'https://images.pexels.com/photos/3555615/pexels-photo-3555615.jpeg'
+      '/casapluda/03b1f694-ab43-4733-a0f7-387d835bea77.jpg',
+      '/casapluda/11d14fb8-f61e-40e8-8dda-54172c3c6fe9.jpg',
+      '/casapluda/17974858-c5c3-4c5c-bdc6-f7b81f37de63.jpg',
+      '/casapluda/3a47c8bc-eea4-4da0-a405-a0a42fbfe5e3.jpg',
+      '/casapluda/440cf7b5-6447-4493-a968-8ee1f32420fe.jpg',
+      '/casapluda/4ec74e39-e831-459c-9e09-0443c03f1b08.jpg',
+      '/casapluda/71903675-48ac-4bd2-a9d2-d8142162a28b.jpg',
+      '/casapluda/813edde7-d19a-49e5-b086-1ee2bcc686d6.jpg'
     ],
     available: true,
     created_at: new Date().toISOString(),
