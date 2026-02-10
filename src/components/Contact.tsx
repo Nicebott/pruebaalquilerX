@@ -110,12 +110,12 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
 
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Ubicación</h3>
-                  <p className="text-base sm:text-lg font-bold text-blue-600 break-words">
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Ubicación</h3>
+                  <p className="text-gray-600 text-sm sm:text-base break-words">
                     Las Terrenas, República Dominicana
                   </p>
                 </div>

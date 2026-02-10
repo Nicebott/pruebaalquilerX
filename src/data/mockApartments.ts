@@ -8,12 +8,12 @@ export const mockApartments: Apartment[] = [
     bedrooms: 2,
     bathrooms: 1,
     max_guests: 4,
-    price_per_night: 120,
+    price_per_night: 95,
     amenities: [
       'WiFi de alta velocidad',
       'Aire acondicionado',
       'Cocina completa',
-      'Acceso a la playa',
+      'A 3 minutos de la playa',
       'Estacionamiento',
       'Ropa de cama'
     ],
@@ -36,7 +36,7 @@ export const mockApartments: Apartment[] = [
     bedrooms: 1,
     bathrooms: 1,
     max_guests: 2,
-    price_per_night: 85,
+    price_per_night: 90,
     amenities: [
       'WiFi incluido',
       'Aire acondicionado',
@@ -62,13 +62,13 @@ export const mockApartments: Apartment[] = [
     bedrooms: 1,
     bathrooms: 1,
     max_guests: 2,
-    price_per_night: 80,
+    price_per_night: 85,
     amenities: [
       'WiFi rápido',
       'Aire acondicionado',
       'Cocina funcional',
       'Terraza',
-      'Acceso a playa',
+      'A 3 minutos de la playa',
       'Ventiladores'
     ],
     images: [
@@ -85,11 +85,11 @@ export const mockApartments: Apartment[] = [
   {
     id: '4',
     title: 'Casa Pluda',
-    description: 'Espaciosa casa con 6 habitaciones y 6 baños. Perfecta para grandes grupos, familias o retiros corporativos. Comodidades completas y espacios amplios para disfrutar al máximo.',
-    bedrooms: 6,
-    bathrooms: 6,
-    max_guests: 12,
-    price_per_night: 380,
+    description: 'Espaciosa casa con 3 habitaciones y 3 baños. Perfecta para grupos, familias o escapadas especiales. Comodidades completas y espacios amplios para disfrutar al máximo.',
+    bedrooms: 3,
+    bathrooms: 3,
+    max_guests: 6,
+    price_per_night: 215,
     amenities: [
       'WiFi premium',
       'Aire acondicionado central',
