@@ -18,9 +18,12 @@ export const mockApartments: Apartment[] = [
       'Ropa de cama'
     ],
     images: [
-      'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg',
-      'https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg',
-      'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg'
+      '/Apartamento A/1aa57a7a-6ddd-48a6-a49d-e29a325b7f38.avif',
+      '/Apartamento A/70c1cdbf-3f94-4c96-94c0-29b597d6bfc5.avif',
+      '/Apartamento A/740aef24-55f3-4637-9880-9d9ebc6322c6.avif',
+      '/Apartamento A/780e0fad-a754-48be-bde6-52f544e7323f.avif',
+      '/Apartamento A/bbfb88ca-3ae5-4571-8f51-4462adaa233e.jpg',
+      '/Apartamento A/c2ef26d6-16ef-4ae1-8697-ee9c4b2ee67a.avif'
     ],
     available: true,
     created_at: new Date().toISOString(),
@@ -69,9 +72,11 @@ export const mockApartments: Apartment[] = [
       'Ventiladores'
     ],
     images: [
-      'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-      'https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg',
-      'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg'
+      '/Apartamento D/23d1a17b-be30-4654-a771-d63bbc973a02.avif',
+      '/Apartamento D/5a50bb5b-33e6-4cf9-82f5-2ffa65da6b40.avif',
+      '/Apartamento D/a55d327f-449b-4def-b089-60ccf1ebc895.jpg',
+      '/Apartamento D/ca922b07-7323-4506-acfb-377f9d80685a.jpg',
+      '/Apartamento D/ea6e04d2-df1d-4404-b179-352ab8b9d324.avif'
     ],
     available: true,
     created_at: new Date().toISOString(),
