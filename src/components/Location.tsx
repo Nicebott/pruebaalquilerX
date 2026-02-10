@@ -60,16 +60,18 @@ export default function Location() {
 
           {/* 🔥 MAPA EXACTO 🔥 */}
           <div className="rounded-2xl overflow-hidden shadow-2xl min-h-[350px]">
-            <iframe
-              src="https://www.google.com/maps?q=19.25537797096516,-69.62427892346816&z=18&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              title="Ubicación exacta"
-            />
-          </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1882.530897960479!2d-69.5503187!3d19.3231246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaefb6aee5d9733%3A0x155812d7428f27c4!2sApartamentos%20CASA%20MARIBEL%20las%20terrenas!5e0!3m2!1ses-419!2sdo!4v1770683965957!5m2!1ses-419!2sdo"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Apartamentos Casa Maribel"
+  />
+</div>
+
         </div>
 
       </div>
