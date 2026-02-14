@@ -14,7 +14,8 @@ export default function Apartments({ onBookClick }: ApartmentsProps) {
 
   const handleWhatsAppBooking = (apartment: Apartment) => {
     const phoneNumber = '18296974277';
-    const message = `Hola! Estoy interesado en reservar el *${apartment.title}*
+    const article = apartment.title.toLowerCase().includes('casa') ? 'la' : 'el';
+    const message = `Hola! Estoy interesado en reservar ${article} *${apartment.title}*
 
 📋 Detalles:
 - ${apartment.bedrooms} ${apartment.bedrooms === 1 ? 'Habitación' : 'Habitaciones'}
