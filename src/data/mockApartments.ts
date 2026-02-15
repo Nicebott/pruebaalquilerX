@@ -3,8 +3,8 @@ import { Apartment } from '../types';
 export const mockApartments: Apartment[] = [
   {
     id: '1',
-    title: 'Apartamento A',
-    description: 'Cómodo apartamento con 2 habitaciones. Ideal para familias pequeñas o grupos de amigos que buscan pasar unos días de descanso en Las Terrenas.',
+    title: 'Apartamento A - Casa Maribel',
+    description: 'Cómodo apartamento Casa Maribel con 2 habitaciones en Las Terrenas. Ideal para familias pequeñas o grupos de amigos que buscan alojamiento de calidad y pasar unos días de descanso.',
     bedrooms: 2,
     bathrooms: 1,
     max_guests: 4,
@@ -31,8 +31,8 @@ export const mockApartments: Apartment[] = [
   },
   {
     id: '2',
-    title: 'Apartamento B',
-    description: 'Acogedor apartamento de una habitación, perfecto para parejas o viajeros individuales. Ubicación privilegiada cerca de playas y restaurantes de Las Terrenas.',
+    title: 'Apartamento B - Casa Maribel',
+    description: 'Acogedor apartamento Casa Maribel de una habitación en Las Terrenas, perfecto para parejas o viajeros individuales. Alojamiento con ubicación privilegiada cerca de playas y restaurantes.',
     bedrooms: 1,
     bathrooms: 1,
     max_guests: 2,
@@ -57,8 +57,8 @@ export const mockApartments: Apartment[] = [
   },
   {
     id: '3',
-    title: 'Apartamento D',
-    description: 'Apartamento cómodo con 1 habitación. Una excelente opción para viajeros que desean disfrutar de la belleza de Las Terrenas sin gastar demasiado.',
+    title: 'Apartamento D - Casa Maribel',
+    description: 'Apartamento Casa Maribel cómodo con 1 habitación en Las Terrenas. Una excelente opción de alojamiento para viajeros que desean disfrutar de la belleza de Las Terrenas sin gastar demasiado.',
     bedrooms: 1,
     bathrooms: 1,
     max_guests: 2,
@@ -84,8 +84,8 @@ export const mockApartments: Apartment[] = [
   },
   {
     id: '4',
-    title: 'Casa Pluda',
-    description: 'Espaciosa casa con 3 habitaciones y 3 baños. Perfecta para grupos, familias o escapadas especiales. Comodidades completas y espacios amplios para disfrutar al máximo.',
+    title: 'Casa Pluda - Casa Maribel',
+    description: 'Espaciosa Casa Pluda de Casa Maribel en Las Terrenas con 3 habitaciones y 3 baños. Alojamiento perfecto para grupos, familias o escapadas especiales. Comodidades completas y espacios amplios para disfrutar al máximo.',
     bedrooms: 3,
     bathrooms: 3,
     max_guests: 6,

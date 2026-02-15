@@ -8,10 +8,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
-            <h3 className="text-white text-lg sm:text-xl font-bold mb-3 sm:mb-4">Las Terrenas Apartments</h3>
+            <h3 className="text-white text-lg sm:text-xl font-bold mb-3 sm:mb-4">Casa Maribel Las Terrenas</h3>
             <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
-              Tu hogar lejos de casa en el paraíso caribeño. Descubre la belleza de Las Terrenas
-              con el confort que mereces.
+              Alojamiento Casa Maribel - Tu hogar lejos de casa en el paraíso caribeño. Apartamentos en Las Terrenas con todo el confort que mereces.
             </p>
           </div>
 
@@ -66,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
-          <p>&copy; {currentYear} Las Terrenas Apartments. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} Casa Maribel Las Terrenas - Apartamentos Casa Maribel. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

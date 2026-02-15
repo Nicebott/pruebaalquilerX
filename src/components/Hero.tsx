@@ -17,10 +17,10 @@ export default function Hero() {
       <div className="relative h-full flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 sm:space-y-6 animate-fade-in">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight px-2">
-            Paraíso en Las Terrenas
+            Casa Maribel Las Terrenas
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light max-w-3xl mx-auto px-4">
-            Descubre tu refugio perfecto en las hermosas playas del Caribe
+            Tu mejor alojamiento en Las Terrenas - Apartamentos y Casa Pluda
           </p>
           <div className="pt-2 sm:pt-4 flex flex-row items-center justify-center gap-2 sm:gap-3 px-4 flex-nowrap">
             <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 sm:p-3 flex-shrink-0">

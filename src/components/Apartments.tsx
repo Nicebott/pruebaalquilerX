@@ -35,10 +35,10 @@ Me gustaría obtener más información y realizar una reserva.`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Nuestros Apartamentos
+            Apartamentos Casa Maribel Las Terrenas
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-            Espacios cómodos y elegantes diseñados para tu máximo confort
+            Alojamiento completo en Las Terrenas - Espacios cómodos y elegantes diseñados para tu máximo confort
           </p>
         </div>
 

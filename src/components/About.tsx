@@ -6,10 +6,10 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Bienvenido a Las Terrenas
+            Bienvenido a Casa Maribel
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Un paraíso escondido en la costa norte de la República Dominicana, donde las playas de arena blanca se encuentran con aguas cristalinas turquesas
+            Apartamentos Casa Maribel en Las Terrenas - Un paraíso escondido en la costa norte de República Dominicana, donde las playas de arena blanca se encuentran con aguas cristalinas turquesas
           </p>
         </div>
 
