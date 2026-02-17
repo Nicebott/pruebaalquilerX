@@ -89,7 +89,7 @@ export const mockApartments: Apartment[] = [
     bedrooms: 3,
     bathrooms: 3,
     max_guests: 6,
-    price_per_night: 215,
+    price_per_night: 180,
     amenities: [
       'WiFi premium',
       'Aire acondicionado central',
