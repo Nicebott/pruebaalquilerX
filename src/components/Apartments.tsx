@@ -14,8 +14,7 @@ export default function Apartments({ onBookClick }: ApartmentsProps) {
 
   const handleWhatsAppBooking = (apartment: Apartment) => {
     const phoneNumber = '18296974277';
-    const article = apartment.title.toLowerCase().includes('casa') ? 'la' : 'el';
-    const message = `Hola! Estoy interesado en reservar ${article} *${apartment.title}*
+    const message = `Hola! Estoy interesado en reservar el *${apartment.title}*
 
 📋 Detalles:
 - ${apartment.bedrooms} ${apartment.bedrooms === 1 ? 'Habitación' : 'Habitaciones'}
@@ -35,10 +34,10 @@ Me gustaría obtener más información y realizar una reserva.`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Apartamentos Casa Maribel Las Terrenas
+            Nuestros Apartamentos
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
-            Alojamiento completo en Las Terrenas - Espacios cómodos y elegantes diseñados para tu máximo confort
+            Espacios cómodos y elegantes diseñados para tu máximo confort
           </p>
         </div>
 

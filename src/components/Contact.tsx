@@ -102,10 +102,10 @@ export default function Contact({ selectedApartmentId, onClose }: ContactProps) 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
           <div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Contáctanos - Casa Maribel
+              Contáctanos
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
-              Estamos aquí para ayudarte a planificar tu alojamiento perfecto en Casa Maribel Las Terrenas
+              Estamos aquí para ayudarte a planificar tus vacaciones perfectas en Las Terrenas
             </p>
 
             <div className="space-y-4 sm:space-y-6">
